@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Android Environment Sensors</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="temp_value">Temperature: </string>
+    <string name="humidity_value">Humidity: </string>
+    <string name="pressure_value">Pressure: </string>
+    <string name="luminance_value">Luminance: </string>
+</resources>

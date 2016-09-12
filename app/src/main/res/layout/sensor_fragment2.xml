@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/main_bg2"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+ <FrameLayout
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:layout_weight="0.5"
+     android:layout_margin="4dp"
+     android:elevation="2dp"
+     android:clipToPadding="false"
+    android:outlineProvider="bounds"
+     >
+
+     <ImageView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+
+         android:background="#00000000"
+         />
+<RelativeLayout
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:alpha="0.5"
+    >
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:src="@drawable/thermometer"
+        android:id="@+id/tempIv"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ThinFont"
+        android:text="@string/temp_value"
+        android:id="@+id/temp_headTv"
+        android:layout_toRightOf="@id/tempIv"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ThinFont_Title"
+        android:text="18  C"
+        android:layout_toRightOf="@id/tempIv"
+        android:layout_below="@id/temp_headTv"
+        android:id="@+id/temp_valTv"/>
+    </RelativeLayout>
+ </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_margin="4dp"
+        android:elevation="2dp"
+        android:clipToPadding="false"
+        android:outlineProvider="bounds"
+        >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:background="#00000000"
+        />
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:src="@drawable/barometer"
+            android:id="@+id/presIv"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ThinFont"
+            android:text="@string/pressure_value"
+            android:id="@+id/pres_headTv"
+            android:layout_toRightOf="@id/presIv"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ThinFont_Title"
+            android:text="18  C"
+            android:layout_toRightOf="@id/presIv"
+            android:layout_below="@id/pres_headTv"
+            android:id="@+id/pres_valTv"/>
+    </RelativeLayout>
+
+    </FrameLayout>
+</LinearLayout>
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_margin="4dp"
+            android:elevation="2dp"
+            android:clipToPadding="false"
+            android:outlineProvider="bounds"
+            >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.4"
+            android:background="#00000000"
+            />
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:src="@drawable/humidity"
+                android:id="@+id/humIv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ThinFont"
+                android:text="@string/humidity_value"
+                android:id="@+id/hum_headTv"
+                android:layout_toRightOf="@id/humIv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ThinFont_Title"
+                android:text="18  C"
+                android:layout_toRightOf="@id/humIv"
+                android:layout_below="@id/hum_headTv"
+                android:id="@+id/hum_valTv"/>
+        </RelativeLayout>
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_margin="4dp"
+            android:elevation="2dp"
+            android:clipToPadding="false"
+            android:outlineProvider="bounds"
+            >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.4"
+            android:background="#00000000"
+            />
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:src="@drawable/illuminance"
+                android:id="@+id/lumIv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ThinFont"
+                android:text="@string/luminance_value"
+                android:id="@+id/lum_headTv"
+                android:layout_toRightOf="@id/lumIv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ThinFont_Title"
+                android:text="18  C"
+                android:layout_toRightOf="@id/lumIv"
+                android:layout_below="@id/lum_headTv"
+                android:id="@+id/lum_valTv"/>
+        </RelativeLayout>
+  </FrameLayout>
+   </LinearLayout>
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/graphView"
+        />
+
+</LinearLayout>
